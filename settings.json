@@ -1,0 +1,63 @@
+{
+    "window.zoomLevel": 2,
+    "terminal.integrated.inheritEnv": false,
+    "editor.lineNumbers": "relative",
+
+    // Vim config
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+      },
+      {
+        "before": ["<C-h>"],
+        "after": ["<C-o>", "h"]
+      },
+      {
+        "before": ["<C-l>"],
+        "after": ["<C-o>", "l"]
+      },
+      {
+        "before": ["<C-g>"],
+        "after": ["<C-h>"]
+      }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "q"],
+        "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+        "before": ["<leader>", "w"],
+        "commands": ["workbench.action.splitEditor"]
+      },
+      {
+        "before": ["<leader>", "t"],
+        "commands": ["workbench.action.toggleSidebarVisibility"]
+      },
+      {
+        "before": ["<leader>", "f"],
+        "commands": [ "revealInExplorer" ],
+      },
+      {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+      }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+
+    // Theme
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+
+    //Python Docstrings
+    "autoDocstring.docstringFormat": "sphinx"
+}
